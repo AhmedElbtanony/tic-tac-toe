@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>tic-tac-toe</title>
+</head>
+<body>
+    <div id="left-section">
+        <div id="XvsO">
+            <div id="X">X win <div class="the-num" id="X-num">0</div></div>
+            <div id="O">O win <div class="the-num" id="O-num">0</div></div>
+            <div id="draw">Draw <div class="the-num" id="draw-num">0</div></div>
+        </div>
+        <div id="mode">
+            <div id="tow-players-area">
+                <label for="tow-players">2 players</label>
+                <input type="radio" id="tow-players" name="mode-radio">
+            </div>
+            <br>
+            <div id="poot-area">
+                <label for="poot">poot</label>
+                <input type="radio" id="poot" name="mode-radio" checked>
+            </div>
+            
+        </div>
+    </div>
+    <div id="control-station">
+        <button type="button" id="reset"onclick="reset()">reset</button>
+        <button type="button" id="reset-result"onclick="resetResult()">reset result</button>
+        <button type="button" id="reset-all"onclick="resetAll()">reset all</button>
+    </div>
+    <div id="play-graund">
+        <button type="button" id="top-left"onclick="topLeft('X')"></button>
+        <button type="button" id="top-center"onclick="topCenter('X')"></button>
+        <button type="button" id="top-right"onclick="topRight('X')"></button>
+        <button type="button" id="mid-left"onclick="midLeft('X')"></button>
+        <button type="button" id="mid-center"onclick="midCenter('X')"></button>
+        <button type="button" id="mid-right"onclick="midRight('X')"></button>
+        <button type="button" id="bottom-left"onclick="bottomLeft('X')"></button>
+        <button type="button" id="bottom-center"onclick="bottomCenter('X')"></button>
+        <button type="button" id="bottom-right"onclick="bottomRight('X')"></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
